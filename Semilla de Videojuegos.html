@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Cool</title>
+    <style>
+        /* General */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Para asegurar el diseño de la página completa */
+            background-image: url("6.jpg"); /* Reemplaza con tu URL de imagen */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo negro translúcido */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 15px;
+            text-transform: uppercase;
+        }
+
+        section.intro {
+            background-color: rgba(7, 233, 44, 0.8); /* Verde translúcido */
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 900px;
+        }
+
+        section.intro h1 {
+            font-size: 3em;
+        }
+
+        section.intro p {
+            font-size: 1.2em;
+        }
+
+        .button {
+            background-color: #f39c12;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #e67e22;
+        }
+
+        section.info {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Blanco translúcido */
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        section.info h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        section.info p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        main {
+            flex: 1; /* Empuja el footer al final de la página */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8); /* Negro translúcido */
+            color: white;
+        }
+
+        iframe {
+            border-radius: 10px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Introducción.html">Introducción</a>
+            <a href="Misión y Visión.html">Misión-Visión</a>
+            <a href="Proyectos Multimedia.html">Multimedia</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>Experimenta tus ideas</h1>
+        <p>La Semilla de Videojuegos es un proyecto creado para ayudar a estudiantes y emprendedores</p>
+        <p>a presentar sus ideas de una forma creativa y divertida. Este proyecto está pensado para personas</p>
+        <p>que trabajan en áreas como ingeniería, medicina y ciencias, y que necesitan mostrar sus ideas de</p>
+        <p>una manera diferente, usando la tecnología como herramienta principal.</p>
+        <a href="index.html" class="button">Inicio</a>
+    </section>
+
+    <main>
+        <section id="mas-info" class="info">
+            <h2>Juego Scratch</h2>
+            <iframe src="https://scratch.mit.edu/projects/1090699984/embed" 
+            allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>PROYECTO DESARROLLOS DE MULTIMEDIA NOVIEMBRE DE 2024.</p>
+    </footer>
+</body>
+</html>

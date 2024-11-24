@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Sofisticada</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #f7f7f7;
+            background-image: url("Proteccion_de_los_datos_h-1.jpg"); /* Reemplaza esta URL con la de tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(38, 185, 99, 0.8); /* Fondo semitransparente */
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(30, 99, 99, 0.8); /* Fondo semitransparente */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(41, 244, 10, 0.8);
+        }
+
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            background: rgba(31, 62, 17, 0.9); /* Fondo semitransparente */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(244, 243, 243, 0.992);
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: rgb(193, 95, 206);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8); /* Fondo semitransparente */
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+            <h1 style="flex-grow: 1; text-align: center; margin: 0;">Semilla de Videojuegos para Emprendimientos</h1>
+            <img src="logMulti.jpg" alt="Logo" style="height: 120px;">
+        </div>
+    </header>
+    <nav>
+            
+            <a href="Introducción.html">Introducción</a>
+            <a href="Misión y Visión.html">mision-vision</a>
+            <a href="Semilla de Videojuegos.html">Semilla</a>
+            <a href="Proyectos Multimedia.html">Multimedia</a>
+    </nav>
+    <section id="inicio">
+        <div class="intro">
+            <h1>Explora un nuevo metodo</h1>
+            <p>Enfocados en el futuro</p>
+        </div>
+        <div class="cards">
+            <!-- Tarjetas columna izquierda -->
+            <a href="Semilla de Videojuegos.html" style="text-decoration: none;">
+            <div class="card">
+                <h2>Semilla de Videojuegos</h2>
+                <img src="images.png" alt="Diseño Moderno" style="width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+                <p>Presenta tus ideas de ingeniería, medicina y ciencias a través de un videojuego.</p>
+            </div>
+            </a>
+            <a href="Introducción.html" style="text-decoration: none;">
+                <div class="card">
+                    <h2>Introducción</h2>
+                    <img src="fd.jpg" alt="Diseño Moderno" style="width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+                    <p>Este proyecto permite que los emprendedores presenten sus ideas de negocio enterate como.</p>
+                </div>
+            </a>
+            
+            <a href="Misión y Visión.html" style="text-decoration: none;">
+                <div class="card">
+                    <h2>Misión y Visión</h2>
+                    <img src="mision-vision.jpg" alt="Diseño Moderno" style="width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+                    <p>Nuestra misión es proporcionar una plataforma interactiva para que los emprendedores</p>
+                      <p>  Nuestra vision Ser un referente en el uso de videojuegos como medio de exposición
+                    </p>
+                </div>
+            </a>
+            
+            <!-- Tarjetas columna derecha -->
+            <a href="Proyectos Multimedia.html" style="text-decoration: none;">
+                <div class="card">
+                    <h2>Proyectos Multimedia</h2>
+                    <img src="multimedia-2048-x-1148-wallpaper-t2j9894w01r6icml.jpg" alt="Diseño Moderno" style="width: 100%; height: auto; border-radius: 8px; margin-top: 10px;">
+                    <p>La creatividad se puede plasmar.</p>
+                    <p>Kahoot!    Genially</p>
+                     <p>   Avatar   Podcast</p>
+                </div>
+            </a>
+            
+          
+    </section>
+    <footer>
+         PROYECTO DESARROLLOS DE MULTIMEDIA  NOVIEMBRE  DE 2024.
+    </footer>
+</body>
+</html>
+

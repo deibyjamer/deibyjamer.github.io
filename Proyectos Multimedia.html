@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Cool</title>
+    <style>
+        /* Estilos internos para hacer la página atractiva */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Para asegurar el diseño de la página completa */
+            background-image: url("5.jpg"); /* Reemplaza con tu URL de imagen */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Hace que el fondo permanezca fijo al hacer scroll */
+            color: #333;
+        }
+        .button {
+    display: inline-block;
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 15px;
+            text-transform: uppercase;
+        }
+
+        section.intro {
+            background-image: url('fondo.jpg'); /* Ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section.intro h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        section.intro p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        section.info {
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        section.info h2 {
+            font-size: 2em;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .media-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .media-item {
+            flex: 1 1 calc(50% - 20px);
+            max-width: 48%;
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .media-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .media-item video,
+        .media-item iframe,
+        .media-item img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .media-item {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Introducción.html">Introducción</a>
+            <a href="Misión y Visión.html">Misión-Visión</a>
+            <a href="Semilla de Videojuegos.html">Semilla</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1>Proyectos</h1>
+        <p>Proyectos multimedia</p>
+        <a href="index.html" class="button">Inicio</a>
+    </section>
+
+    <section id="media" class="info">
+        <h2>Contenido Multimedia</h2>
+       
+        <div class="media-container">
+            <!-- Video -->
+            <div class="media-item">
+                <h3>Avatar</h3>
+                <video controls>
+                    <source src="Anthony - Anfitrión.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+            
+            <!-- Podcast -->
+            <div class="media-item">
+                <h3>Podcast</h3>
+                <iframe src="https://audio.com/embed/audio/1815381771094468?theme=image" 
+                        style="border: none;"></iframe>
+                <a href="https://audio.com/deiby" 
+                   style="text-align: center; display: block; color: #A4ABB6; font-size: 12px; font-family: sans-serif; 
+                   line-height: 16px; margin-top: 8px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
+                    @deiby
+                </a>
+            </div>
+
+            <!-- Kahoot -->
+            <div class="media-item">
+                <h3>Kahoot</h3>
+                <a href="https://create.kahoot.it/share/refet/7de9c92a-b3dd-4534-a8ef-910e87a4402d" target="_blank">
+                    <img src="45.jpeg" alt="Juega en Kahoot">
+                </a>
+            </div>
+
+            <!-- Genially -->
+            <div class="media-item">
+                <h3>Genially</h3>
+                <iframe title="Presentación Invierno" frameborder="0" 
+                        src="https://view.genially.com/67313a523b08cc3462d08cf0" 
+                        type="text/html" allowscriptaccess="always" allowfullscreen="true"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>PROYECTO DESARROLLOS DE MULTIMEDIA NOVIEMBRE DE 2024.</p>
+    </footer>
+
+</body>
+</html>
+
+
